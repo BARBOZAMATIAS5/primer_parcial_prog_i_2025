@@ -25,7 +25,7 @@ def cargar_matriz_notas() -> list:
 ### siendo n --> alumnos, m --> notas. Despues de ingresar, se creara el primer for que tendra la funcionalidad
 ### de iterar los alumnos y se crea una lista auxiliar para almacenar dentro de ella, las notas que se tendran que
 ### ingresar en el siguiente for anidado. Al terminar la carga de notas, se hace un append a la lista fuera de los
-### bucles, permitiendo la conformacion de los alumnos (filas(n)) y las notas (columnas(m))
+### bucles, permitiendo la conformacion de los alumnos (filas(n)) y las notas (columnas(m)). Retorna una matriz
 
 ### 2
 def porcentaje_aprobados(matriz_alumnos: list) -> None:
@@ -63,4 +63,3 @@ def porcentaje_aprobados(matriz_alumnos: list) -> None:
 alumnos = cargar_matriz_notas()
 print(alumnos)
 porcentaje_aprobados(alumnos)
-
