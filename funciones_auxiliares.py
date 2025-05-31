@@ -1,5 +1,5 @@
-### aca se encuentran los validadores, casteos, validaciones de ingreso y limitador
-### de ingreso, es decir ingresar un numero de min x a max y
+### aca se encuentran los validadores, casteos, validaciones de ingreso, limitador
+### de ingreso, es decir ingresar un numero de min x a max y, encuentra maximos
 
 def validar_numero(n: str) -> bool:
     '''
@@ -49,3 +49,19 @@ def limitador_de_ingreso(mensaje: str, min: int, max: int) -> int:
             return numero_ingresado
         else:
             print(f"Error, ingresar nuevamente un numero entre {str(min)} y {str(max)}")
+
+def maximo(lista: list) -> list:
+    '''
+    Busca el maximo de la lista pasada por parametro |
+    Parametro: lista -> list |
+    Return: list -> [int, float]
+    '''
+    mayor = lista[0][0]
+    indice = 0
+    
+    for i in range(1, len(lista)):
+        if lista[i][0] > mayor:
+            mayor = lista[i][0]
+            indice = i
+
+    return [indice, mayor]
